@@ -1,3 +1,5 @@
+import GlitchText from './GlitchText';
+
 const ChaosTitle = () => {
   const text = "CHAOS THEORY";
   const letters = text.split('');
@@ -7,29 +9,36 @@ const ChaosTitle = () => {
       <div className="relative">
         {/* Rotating circular text */}
         <div className="animate-chaos-rotate">
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
+          <div className="relative w-72 h-72 md:w-96 md:h-96">
             {letters.map((letter, index) => {
               const angle = (index * 360) / letters.length;
-              const radius = 120; // Distance from center
+              const radius = 140; // Distance from center
               
               return (
-                <span
+                <div
                   key={index}
-                  className="absolute text-title text-lg md:text-xl lg:text-2xl tracking-widest"
+                  className="absolute"
                   style={{
                     left: '50%',
                     top: '50%',
                     transform: `
                       translate(-50%, -50%) 
                       rotate(${angle}deg) 
-                      translateY(-${radius}px) 
-                      rotate(-${angle}deg)
+                      translateY(-${radius}px)
                     `,
                     transformOrigin: 'center',
                   }}
                 >
-                  {letter === ' ' ? '\u00A0' : letter}
-                </span>
+                  <span
+                    className="text-title text-xl md:text-2xl lg:text-3xl tracking-wider block"
+                    style={{
+                      transform: `rotate(-${angle}deg)`,
+                      transformOrigin: 'center',
+                    }}
+                  >
+                    <GlitchText text={letter === ' ' ? '\u00A0' : letter} />
+                  </span>
+                </div>
               );
             })}
           </div>
