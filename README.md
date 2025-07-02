@@ -1,4 +1,23 @@
-# Welcome to your Lovable project
+# Chaos Theory: A Digital Exploration
+
+This project is a visual and interactive exploration of Chaos Theory, built with modern web technologies. It aims to represent the core principles of chaos—such as the butterfly effect, unpredictability, and emergent patterns—through a dynamic and engaging user experience.
+
+## Diving into Chaos
+
+Chaos Theory is a branch of mathematics focusing on the behavior of dynamical systems that are highly sensitive to initial conditions. This sensitivity is popularly referred to as the "butterfly effect," where a small change in one state of a deterministic nonlinear system can result in large differences in a later state.
+
+### Key Concepts Explored:
+
+*   **The Butterfly Effect:** The idea that a minor, seemingly insignificant change can lead to massive, unpredictable consequences. This is visualized through the interactive elements of the site, where user input creates subtle shifts in the animations.
+*   **Unpredictability:** While the systems are deterministic (meaning their future behavior is fully determined by their initial conditions), they are inherently unpredictable due to the impossibility of measuring initial conditions with infinite accuracy. The generative nature of the background and text effects reflects this.
+*   **Emergence and Pattern:** Within the apparent randomness of chaotic systems, intricate and beautiful patterns can emerge. The design of this project—from the particle animations to the circular text—seeks to highlight this hidden order within the chaos.
+
+This application leverages the following technologies to bring these concepts to life:
+
+*   **Vite & React:** For a fast, modern, and component-based frontend.
+*   **TypeScript:** To ensure code quality and maintainability.
+*   **Tailwind CSS & shadcn/ui:** For a highly customizable and visually appealing design system.
+*   **Framer Motion & CSS Animations:** To create the fluid and dynamic visual effects that are central to the project's theme.
 
 ## Project info
 
