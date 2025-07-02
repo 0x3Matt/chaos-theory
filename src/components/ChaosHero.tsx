@@ -24,38 +24,35 @@ const ChaosHero = () => {
       {/* Central rotating title */}
       <ChaosTitle />
 
-      {/* Bottom content blocks */}
-      <div className="relative z-10 min-h-screen flex items-end pb-32">
-        <div className="w-full px-8 md:px-16 lg:px-24">
-          <div className="flex flex-col lg:flex-row justify-between items-end space-y-8 lg:space-y-0 lg:space-x-16">
-            {/* Left content block */}
-            <div className={`transform transition-all duration-1000 ease-out ${
-              isLoaded 
-                ? 'translate-y-0 opacity-100' 
-                : 'translate-y-16 opacity-0'
-            }`}>
-              <ContentBlock
-                title="Uncertainty"
-                content="Within disorder lies potential. Each moment is shaped by countless invisible variables."
-                delay={500}
-                alignment="left"
-              />
-            </div>
+      {/* Top left content block */}
+      <div className="absolute top-16 left-8 md:left-16 lg:left-24 z-10">
+        <div className={`transform transition-all duration-1000 ease-out ${
+          isLoaded 
+            ? 'translate-y-0 opacity-100' 
+            : 'translate-y-16 opacity-0'
+        }`}>
+          <ContentBlock
+            title="Uncertainty"
+            content="Within disorder lies potential. Each moment is shaped by countless invisible variables."
+            delay={500}
+            alignment="left"
+          />
+        </div>
+      </div>
 
-            {/* Right content block */}
-            <div className={`transform transition-all duration-1000 ease-out ${
-              isLoaded 
-                ? 'translate-y-0 opacity-100' 
-                : 'translate-y-16 opacity-0'
-            }`} style={{ transitionDelay: '200ms' }}>
-              <ContentBlock
-                title="Emergence"
-                content="Patterns rise from unpredictability. Chaos is not random — it's undiscovered order."
-                delay={1200}
-                alignment="right"
-              />
-            </div>
-          </div>
+      {/* Bottom right content block */}
+      <div className="absolute bottom-16 right-8 md:right-16 lg:right-24 z-10">
+        <div className={`transform transition-all duration-1000 ease-out ${
+          isLoaded 
+            ? 'translate-y-0 opacity-100' 
+            : 'translate-y-16 opacity-0'
+        }`} style={{ transitionDelay: '200ms' }}>
+          <ContentBlock
+            title="Emergence"
+            content="Patterns rise from unpredictability. Chaos is not random — it's undiscovered order."
+            delay={1200}
+            alignment="right"
+          />
         </div>
       </div>
 
