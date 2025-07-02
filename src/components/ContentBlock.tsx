@@ -10,7 +10,7 @@ interface ContentBlockProps {
 
 const ContentBlock = ({ title, content, delay = 0, alignment = 'left' }: ContentBlockProps) => {
   return (
-    <div className={`chaos-glass rounded-xl p-8 max-w-sm backdrop-blur-lg ${
+    <div className={`relative p-6 max-w-sm ${
       alignment === 'right' ? 'text-right' : 'text-left'
     }`}>
       <div className="space-y-4">
