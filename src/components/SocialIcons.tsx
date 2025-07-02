@@ -1,10 +1,10 @@
-import { Github, Twitter, Instagram } from 'lucide-react';
+import { Github, Twitter, Globe } from 'lucide-react';
 
 const SocialIcons = () => {
   const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Globe, href: 'https://arttentionmedia.pro/', label: 'Website' },
+    { icon: Twitter, href: 'https://x.com/0x3Matt', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/0x3Matt/', label: 'GitHub' },
   ];
 
   return (
