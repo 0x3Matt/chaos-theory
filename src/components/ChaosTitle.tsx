@@ -1,7 +1,7 @@
 import GlitchText from './GlitchText';
 
 const ChaosTitle = () => {
-  const text = "CHAOS THEORY";
+  const text = "CHAOS • ".repeat(4);
   const letters = text.split('');
 
   return (
@@ -9,10 +9,10 @@ const ChaosTitle = () => {
       <div className="relative">
         {/* Rotating circular text */}
         <div className="animate-chaos-rotate">
-          <div className="relative w-72 h-72 md:w-96 md:h-96">
+          <div className="relative w-96 h-96">
             {letters.map((letter, index) => {
               const angle = (index * 360) / letters.length;
-              const radius = 140; // Distance from center
+              const radius = 170; // Distance from center
               
               return (
                 <div
@@ -30,7 +30,7 @@ const ChaosTitle = () => {
                   }}
                 >
                   <span
-                    className="text-title text-xl md:text-2xl lg:text-3xl tracking-wider block"
+                    className="text-title font-bold text-2xl tracking-wider block"
                     style={{
                       transform: `rotate(-${angle}deg)`,
                       transformOrigin: 'center',
