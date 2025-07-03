@@ -24,8 +24,8 @@ const ChaosHero = () => {
       {/* Central rotating title */}
       <ChaosTitle />
 
-      {/* Top left content block */}
-      <div className="absolute top-16 left-8 md:left-16 lg:left-24 z-10">
+      {/* Top left content block - improved mobile positioning */}
+      <div className="absolute top-2 left-2 sm:top-8 sm:left-8 md:top-16 md:left-16 lg:left-24 z-10">
         <div className={`transform transition-all duration-1000 ease-out ${
           isLoaded 
             ? 'translate-y-0 opacity-100' 
@@ -40,8 +40,8 @@ const ChaosHero = () => {
         </div>
       </div>
 
-      {/* Bottom right content block */}
-      <div className="absolute bottom-16 right-8 md:right-16 lg:right-24 z-10">
+      {/* Bottom right content block - improved mobile positioning */}
+      <div className="absolute bottom-24 right-2 sm:bottom-16 sm:right-8 md:right-16 lg:right-24 z-10">
         <div className={`transform transition-all duration-1000 ease-out ${
           isLoaded 
             ? 'translate-y-0 opacity-100' 
@@ -56,8 +56,10 @@ const ChaosHero = () => {
         </div>
       </div>
 
-      {/* Social icons */}
-      <SocialIcons />
+      {/* Social icons with extra bottom margin for mobile */}
+      <div className="pb-safe">
+        <SocialIcons />
+      </div>
 
       {/* Subtle cursor effect overlay */}
       <div className="fixed inset-0 pointer-events-none z-50">
