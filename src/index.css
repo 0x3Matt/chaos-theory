@@ -226,4 +226,29 @@
   .animate-chaos-blink {
     animation: chaos-blink 1s step-end infinite;
   }
+
+  /* Responsive radius utilities for chaos title */
+  .chaos-radius-sm {
+    --chaos-radius: -110px;
+  }
+
+  .chaos-radius-md {
+    --chaos-radius: -140px;
+  }
+
+  .chaos-radius-lg {
+    --chaos-radius: -170px;
+  }
+
+  @media (min-width: 640px) {
+    .chaos-radius-sm {
+      --chaos-radius: -140px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .chaos-radius-sm {
+      --chaos-radius: -170px;
+    }
+  }
 }
