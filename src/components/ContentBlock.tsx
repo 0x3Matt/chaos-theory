@@ -14,11 +14,11 @@ const ContentBlock = ({ title, content, delay = 0, alignment = 'left' }: Content
       alignment === 'right' ? 'text-right' : 'text-left'
     }`}>
       <div className="space-y-4">
-        <h2 className="text-lg md:text-xl font-mono font-medium tracking-wide">
+        <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-mono font-medium tracking-wide">
           <GlitchText text={title} />
         </h2>
         
-        <div className="text-chaos-text-mono text-sm md:text-base leading-relaxed font-mono font-light">
+        <div className="text-chaos-text-mono text-sm md:text-base lg:text-lg xl:text-xl leading-relaxed font-mono font-light">
           <TypewriterText 
             text={content}
             speed={30}
